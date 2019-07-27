@@ -1,9 +1,8 @@
 # PROJECT
-To develop a machine learning model which can classify gamma and hadron rays coming out of
-charged cosmic particles.
+To develop machine learning models that can classify cosmic particles into gamma and hadron rays.
 
 # UNDERSTANDING THE PROJECT
-In this project we make use of the dataset collected through the Cherenkov Telescope array(CTA).With its ability to view the highest 
+In this project we make use of the dataset collected through the Cherenkov Telescope array(CTA). With its ability to view the highest 
 energy processes in the Universe,CTA is able to detect the gamma rays about 10 million times more energetic than visible light.
 Cherenkov gamma telescope observes high energy gamma rays, taking advantage of the radiation emitted by charged particles produced inside 
 the electromagnetic showers initiated by the gammas, and developing in the atmosphere. This Cherenkov radiation  leaks through the 
@@ -30,8 +29,8 @@ discrimination. The energy depositions are typically asymmetric along the major 
 11. class: g,h # gamma (signal), hadron (background) 
 
 # OVERVIEW
-Basically, we use the MAGIC TELESCOPE dataset to build a machine learning classifier model which will train on the dataset and will be able to classify whether or not some energy is either Gamma Radiatin or Hadron Radiation.
-We will train the model using the application of different algorithms(Logistics Regression, Neural Network,KNN,SVM,Random Forests) and will analyse the accuracy obtained using these algorithms.
+Basically, we build different machine learning classifier models and train on them on MAGIC TELESCOPE dataset. Then we use these models to classify cosmic events detected by the telescope into Gamma ray events or Hadronic events.
+The classifiers include Logistics Regression, Neural Network,KNN,SVM and Random Forests. Finally we compare their accuracy of classification.
 
 # DEPENDENCIES
 * Numpy
