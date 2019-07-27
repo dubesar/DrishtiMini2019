@@ -1,4 +1,4 @@
-#PROJECT
+# PROJECT
 To develop a machine learning model which can classify gamma and hadron rays coming out of
 charged cosmic particles.
 
@@ -16,7 +16,7 @@ Typically, the image of a shower after some pre-processing is an elongated clust
 The characteristic parameters of this ellipse (often called Hillas parameters) are among the image parameters that can be used for 
 discrimination. The energy depositions are typically asymmetric along the major axis, and this asymmetry can also be used in discrimination.
 
-###ATTRIBUTE INFORMATION
+### ATTRIBUTE INFORMATION
 1. fLength: continuous # major axis of ellipse [mm]
 2. fWidth: continuous # minor axis of ellipse [mm]
 3. fSize: continuous # 10-log of sum of content of all pixels [in #phot]
@@ -29,11 +29,11 @@ discrimination. The energy depositions are typically asymmetric along the major 
 10. fDist: continuous # distance from origin to center of ellipse [mm]
 11. class: g,h # gamma (signal), hadron (background) 
 
-#OVERVIEW
+# OVERVIEW
 Basically, we use the MAGIC TELESCOPE dataset to build a machine learning classifier model which will train on the dataset and will be able to classify whether or not some energy is either Gamma Radiatin or Hadron Radiation.
 We will train the model using the application of different algorithms(Logistics Regression, Neural Network,KNN,SVM,Random Forests) and will analyse the accuracy obtained using these algorithms.
 
-#DEPENDENCIES
+# DEPENDENCIES
 * Numpy
 * Pandas
 * scikit-learn
