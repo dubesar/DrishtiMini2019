@@ -1,4 +1,4 @@
-MAGIC Gamma Telescope Data Set
+**MAGIC Gamma Telescope Data Set**
 
 Number of Instances:19020
 Number of Attributes:11
