@@ -49,6 +49,12 @@ We implimented logistic regresstion and neural network algorithms on the dataset
 
 # ACCURACY ACHIEVED ON THE APPLICATION OF THE ALGORITHMS
 
+for 0.01 Accuracy from scratch: 0.35790649433540767
+for 0.02 Accuracy from scratch: 0.3636508696345939
+for 0.05 Accuracy from scratch: 0.3965214616243817
+for 0.1 Accuracy from scratch: 0.4573161002074358
+for 0.2 Accuracy from scratch: 0.565980532950375
+for 0.5 Accuracy from scratch: 0.781554172650391
 # ISSUES FACED DURING:
 * OBTAINING THE DATA
 * DATA CLEANING
