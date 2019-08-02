@@ -49,6 +49,7 @@ We implimented logistic regresstion and neural network algorithms on the dataset
 
 # ACCURACY ACHIEVED ON THE APPLICATION OF THE ALGORITHMS
 The simple classification accuracy is not meaningful for this data, since classifying a background event as signal is worse than classifying a signal event as background. where the probability of accepting a background event as signal is below one of the following thresholds: 0.01, 0.02, 0.05, 0.1, 0.2 depending on the required quality of the sample of the accepted events for different experiments.
+
 Logistic-regression:
 for 0.01 Accuracy from scratch: 0.35790649433540767
 for 0.02 Accuracy from scratch: 0.3636508696345939
