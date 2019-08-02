@@ -37,12 +37,34 @@ The following are the different attributes of the data:
 11. class: g,h # gamma (signal), hadron (background) 
 
 # DATA CLEANING 
+The main aim of Data Cleaning is to identify and remove errors & duplicate data, in order to create a reliable dataset. This improves the quality of the training data for analytics and enables accurate decision-making.Needless to say, data cleansing is a time-consuming process and most data scientists spend an enormous amount of time in enhancing the quality of the data. However, there are various methods to identify and classify data for data cleansing.
+
+Data Cleaning consists of two basic stages, first is error identification and second is error solving. For any data cleaning activity, the first step is to identify the anomalies.
+
+There are various method to clean data but in our project we are using pandas in python to clean data.
+There are some kind we faced while we are cleaning the data.They are:
+1.missing values
+2.numeric strings
+3.alphabetical strings
+4.special characters..etc
+
 The data we recived containained missing values along with strings randomly inserted into columns that one would expect to have contained only numeric values. So it was essential 
-for us to first clean the data before we could run any model on it. We first located the said stings in the data by running 2 seperate 'for' loops through the features and the target 
-columns respectively. If a row contained any string in any of the 'features' columns, we droped it. We found positions of the said rows by running a loop that individually checked 
+
+for us to first clean the data before we could run any model on it. We first located the said stings in the data by running 2 seperate 'for' loops through the features and the target columns respectively. 
+
+If a row contained any string in any of the 'features' columns, we droped it. We found positions of the said rows by running a loop that individually checked 
+
 each element of a column and stored the outliers. For the target column however we can't use the same code as it already consisted of strings. So our approch was to find any string 
-that didn't match either 'h' or 'g', as these were what the values were supposed to be. The outliers found in this loop were added to the previous list, finally giving us a list 
-containing all outliers. All the rows stored in this list were latter dropped.
+
+that didn't match either 'h' or 'g', as these were what the values were supposed to be. The outliers found in this loop were added to the previous list, finally giving us a list containing all outliers. All the rows stored in this list were latter dropped.
+
+For missing values first store the index of the data in one array and us fillna function in pandas to fill the the empty spaces with mean/median/mode of the respectively colomns or drop the row of missing value using dropna function.
+
+to remove alphabetical strings we can use is.alpha() or is.alnum() and store the data index.drop the index values.we can do in another way by defineing a function it type cast r]the number if it changes then it return True if its show value error the return False and drop the false rows.
+ 
+Conclusion:
+Data Cleaning is a critical process for the success of any machine learning function. For most machine learning projects, about 80 percent of the effort is spent on data cleaning. 
+
 
 # ALGORITHMS USED TO MODEL THE DATA
 We implimented logistic regresstion and neural network algorithms on the dataset.
