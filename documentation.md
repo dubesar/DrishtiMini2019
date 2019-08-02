@@ -1,6 +1,8 @@
 # PROJECT 
 To develop machine learning models that can classify cosmic particles into gamma and hadron rays.
 
+# BREIF SCIENCE BEHIND PROJECT
+
 # OVERVIEW
 
 In this project we make use of the dataset collected through the Cherenkov Telescope array(CTA).With its ability to view the highest 
@@ -19,6 +21,12 @@ The characteristic parameters of this ellipse (often called Hillas parameters) a
 discrimination. The energy depositions are typically asymmetric along the major axis, and this asymmetry can also be used in discrimination.
 
 Our objective is to train different machine learing models on this data and try to find the best model for hadron-gamma clasiffication.
+
+# WHAT IS MACHINE LEARNING ?
+
+# WHAT IS ROLE OF MACHINE LEARNING IN THIS PROJECT?
+
+# HOW DATA IS REPRESENTED?
  
 ### ATTRIBUTE INFORMATION
 
@@ -66,12 +74,14 @@ to remove alphabetical strings we can use is.alpha() or is.alnum() and store the
 Conclusion:
 Data Cleaning is a critical process for the success of any machine learning function. For most machine learning projects, about 80 percent of the effort is spent on data cleaning. 
 
+References:
+https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y
 
 # ALGORITHMS USED TO MODEL THE DATA
 We implimented logistic regresstion and neural network algorithms on the dataset.
 
 # ACCURACY ACHIEVED ON THE APPLICATION OF THE ALGORITHMS
-The simple classification accuracy is not meaningful for this data, since classifying a background event as signal is worse than classifying a signal event as background. where the probability of accepting a background event as signal is below one of the following thresholds: 0.01, 0.02, 0.05, 0.1, 0.2,0.5 depending on the required quality of the sample of the accepted events for different experiments.
+The simple classification accuracy is not meaningful for this data, since classifying a background event as signal is worse than classifying a signal event as background. where the probability of accepting a background event as signal is below one of the following thresholds: 0.01, 0.02, 0.05, 0.1, 0.2 depending on the required quality of the sample of the accepted events for different experiments.
 
 Logistic-regression:\
 for 0.01 Accuracy from scratch: 0.357906494335407673\
@@ -84,6 +94,13 @@ for 0.5 Accuracy from scratch: 0.781554172650391
 * OBTAINING THE DATA
 * DATA CLEANING
 * APPLICATION OF THE ALGORITHM
+
+Neural network:
+When we are apply sigmoid activation function to neural function vanishing of the gradient is happening during back propagation if layers in neural more and get all output as same value.
+
+the following video link will explain total in detail about gradient vanishing:
+https://www.youtube.com/watch?v=qhXZsFVxGKo&list=PLkDaE6sCZn6Hn0vK8co82zjQtt3T2Nkqc&index=10
+
 * MISCELLANEOUS
 
 # CONCLUSION
