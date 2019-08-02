@@ -42,6 +42,7 @@ The main aim of Data Cleaning is to identify and remove errors & duplicate data,
 Data Cleaning consists of two basic stages, first is error identification and second is error solving. For any data cleaning activity, the first step is to identify the anomalies.
 
 There are various method to clean data but in our project we are using pandas in python to clean data.
+
 There are some kind we faced while we are cleaning the data.They are:
 1.missing values
 2.numeric strings
