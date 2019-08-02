@@ -1,10 +1,9 @@
 # PROJECT 
- To develop a machine learning model which can classify gamma and hadron rays coming out of
- charged cosmic particles.
+To develop machine learning models that can classify cosmic particles into gamma and hadron rays.
 
 # OVERVIEW
 
- In this project we make use of the dataset collected through the Cherenkov Telescope array(CTA).With its ability to view the highest 
+In this project we make use of the dataset collected through the Cherenkov Telescope array(CTA).With its ability to view the highest 
 energy processes in the Universe,CTA is able to detect the gamma rays about 10 million times more energetic than visible light.
 Cherenkov gamma telescope observes high energy gamma rays, taking advantage of the radiation emitted by charged particles produced inside 
 the electromagnetic showers initiated by the gammas, and developing in the atmosphere. This Cherenkov radiation  leaks through the 
@@ -13,11 +12,18 @@ pulses left by the incoming Cherenkov photons on the photomultiplier tubes, arra
 the primary gamma, a total of few hundreds to some 10000 Cherenkov photons get collected, in patterns (called the shower image), allowing 
 to discriminate statistically those caused by primary gammas (signal) from the images of hadronic showers initiated by cosmic rays in the 
 upper atmosphere (background).
+
 Typically, the image of a shower after some pre-processing is an elongated cluster.A principal component analysis is performed in the camera plane, which results in a correlation axis and defines an ellipse.
+
 The characteristic parameters of this ellipse (often called Hillas parameters) are among the image parameters that can be used for 
 discrimination. The energy depositions are typically asymmetric along the major axis, and this asymmetry can also be used in discrimination.
 
+Our objective is to train different machine learing models on this data and try to find the best model for hadron-gamma clasiffication.
+ 
 ### ATTRIBUTE INFORMATION
+
+The following are the different attributes of the data:
+
 1. fLength: continuous # major axis of ellipse [mm]
 2. fWidth: continuous # minor axis of ellipse [mm]
 3. fSize: continuous # 10-log of sum of content of all pixels [in #phot]
@@ -39,6 +45,7 @@ that didn't match either 'h' or 'g', as these were what the values were supposed
 containing all outliers. All the rows stored in this list were latter dropped.
 
 # ALGORITHMS USED TO MODEL THE DATA
+We implimented logistic regresstion and neural network algorithms on the dataset.
 
 # ACCURACY ACHIEVED ON THE APPLICATION OF THE ALGORITHMS
 
