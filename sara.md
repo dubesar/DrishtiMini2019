@@ -30,7 +30,13 @@ discrimination. The energy depositions are typically asymmetric along the major 
 10. fDist: continuous # distance from origin to center of ellipse [mm]
 11. class: g,h # gamma (signal), hadron (background) 
 
-# DATA CLEANING AND WRANGLING 
+# DATA CLEANING 
+The data we recived containained missing values along with strings randomly inserted into columns that one would expect to have contained only numeric values. So it was essential 
+for us to first clean the data before we could run any model on it. We first located the said stings in the data by running 2 seperate 'for' loops through the features and the target 
+columns respectively. If a row contained any string in any of the 'features' columns, we droped it. We found positions of the said rows by running a loop that individually checked 
+each element of a column and stored the outliers. For the target column however we can't use the same code as it already consisted of strings. So our approch was to find any string 
+that didn't match either 'h' or 'g', as these were what the values were supposed to be. The outliers found in this loop were added to the previous list, finally giving us a list 
+containing all outliers. All the rows stored in this list were latter dropped.
 
 # ALGORITHMS USED TO MODEL THE DATA
 
